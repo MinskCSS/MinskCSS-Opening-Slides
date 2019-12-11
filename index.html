@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-	<title>MinskCSS Meetup #6 — Opening</title>
+	<title>MinskCSS Meetup #7 — Opening</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="shower/themes/minsk-css/styles/screen-16x9.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="assets/animate.css">
+	<link rel="stylesheet" href="assets/fonts.css">
 	<style>
 		.animated {
 			animation-play-state: paused;
@@ -34,39 +35,145 @@
 <body class="shower list">
 
 	<header class="caption">
-		<h1>MinskCSS Meetup #6</h1>
+		<h1>MinskCSS Meetup #7</h1>
 		<p>
 			<a href="https://twitter.com/MinskCSS">@minskcss</a>
 		</p>
 	</header>
-
+	
 	<section class="slide clear" id="cover" style="background-image: linear-gradient(to right, #1CA7DF 0, #1CA7DF 33.3%, #1485C6 33.3%);">
-		<img src="pictures/cover.jpg" alt="" class="cover place top">
+		<style>
+			.sidebar {
+				height: 100%;
+				width: 53vh;
+				padding-left: 52px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				font-family: 'Roboto';
+				color: white;
+			}
+			.sidebar_meetup-number {
+				margin-top: 49px;
+				display: block;
+				font-size: 80px;
+				line-height: 80px;
+			}
+			.sidebar_meetup-date {
+				margin-top: 4px;
+				margin-left: 4px;
+				display: block;
+				font-size: 14px;
+				line-height: 14px;
+			}
+			.sidebar_partners {
+				margin-bottom: 50px;
+
+			}
+			.sidebar_meetup-heading {
+				font-size: 14px;
+				margin-top: 40px;
+				margin-bottom: 7px;
+			}
+			.slide ul.sidebar_meetup-list {
+				margin-bottom: 0;
+				display: flex;
+			}
+			.slide ul > .sidebar_meetup-list-item::before {
+				padding-right: 0;
+				content: '';
+				width: auto;
+			}
+			.slide ul > .sidebar_meetup-list-item {
+				opacity: 1;
+				text-indent: 0;
+				line-height: 0;
+				margin-right: 20px;
+				display: flex;
+				align-items: center;
+			}
+			.sidebar_meetup-list-image {
+				display: block;
+			}
+		</style>
+		<img src="pictures/cover.png" alt="" class="cover place top">
+		<div class="sidebar">
+			<div class="sidebar_info">
+				<span class="sidebar_meetup-number">№7</span>
+				<time datetime="2019-12-12" class="sidebar_meetup-date">12 декабря 2019</time>
+			</div>
+			<div class="sidebar_partners">
+				<h3 class="sidebar_meetup-heading">Организаторы:</h3>
+				<ul class="sidebar_meetup-list">
+					<li class="sidebar_meetup-list-item">
+						<img class="sidebar_meetup-list-image" src="pictures/lovata-logo-small.svg" width="120px" alt="LOVATA logo">
+					</li>
+					<li class="sidebar_meetup-list-item">
+						<img class="sidebar_meetup-list-image" src="pictures/space.svg" width="120px" alt="SPACE logo">
+					</li>
+				</ul>
+				<h3 class="sidebar_meetup-heading">Партнёры:</h3>
+				<ul class="sidebar_meetup-list">
+					<li class="sidebar_meetup-list-item">
+						<img class="sidebar_meetup-list-image" src="pictures/issoft-logo-small.svg" width="120px" alt="ISSoft logo">
+					</li>
+					<li class="sidebar_meetup-list-item">
+						<img class="sidebar_meetup-list-image" src="pictures/evolution-gaming-logo-small.svg" width="120px" alt="Evolution Gaming logo">
+					</li>
+				</ul>
+			</div>
+		</div>
 	</section>
 
 	<section class="slide clear">
-		<img src="pictures/lovata.svg" class="place" alt="LOVATA" width="900">
+		<img src="pictures/lovata.svg" class="place" alt="LOVATA logo" width="900">
 	</section>
 
 	<section class="slide clear">
-		<img src="./pictures/space.jpg" class="cover width place top">
+		<img src="./pictures/space.jpg" class="cover width place top" alt="SPACE logo">
 		<img src="pictures/space.svg" width="55%" class="place">
 	</section>
 
 	<section class="slide clear">
-		<img src="pictures/issoft.svg" class="place" alt="ISSoft" width="700">
+		<img src="pictures/issoft.svg" class="place" alt="ISSoft" width="700" alt="ISSoft logo">
 	</section>
 
-	<section class="slide clear">
-		<img src="pictures/jsnation-banner.png" class="cover" alt="JSNation" style="width: 90%">
-	</section>
-
-	<section class="slide clear">
-		<img src="pictures/frontendconf-banner.png" class="cover" alt="FrontendConf">
+	<section class="slide clear black">
+		<img src="pictures/evolution-gaming-logo-small.svg" class="place" alt="Evolution Gaming logo" width="700">
 	</section>
 
 	<section class="slide black clear">
-		<img src="pictures/css-minsk-js-logo-2019.svg" class="place" width="500" alt="CSS-Minsk-JS">
+		<h2 class="shout no-bg shrink" style="color: white">+33% 👥</h2>
+	</section>
+
+	<section class="slide black clear">
+		<h2 class="shout no-bg shrink" style="color: white">2 🎓</h2>
+	</section>
+
+	<section class="slide clear">
+		<img src="pictures/frontendconf-banner.png" class="cover" alt="FrontendConf banner">
+	</section>
+
+	<section class="slide clear black">
+		<img src="pictures/react-advanced-banner.png" class="cover" alt="React Advanced banner">
+	</section>
+
+	<section class="slide clear black">
+		<img src="pictures/js-nation-banner.png" class="cover" alt="JS Nation banner">
+	</section>
+
+	<section class="slide clear black">
+		<img src="pictures/smashingmag-banner.png" class="cover" alt="Smashing Magazine Print banner">
+	</section>
+
+	<section class="slide black clear">
+		<iframe class="cover" width="100%" height="100%" src="https://www.youtube.com/embed/GsG5X-PXQZE?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</section>
+	<section class="slide black clear">
+		<img src="pictures/css-minsk-js-logo-2020.svg" class="place" width="500" alt="CSS-Minsk-JS 2020 logo">
 	</section>
 
 	<section class="slide clear">
@@ -80,7 +187,7 @@
 	</section>
 
 	<section class="slide clear">
-		<img src="pictures/qr.gif" class="place" height="400" alt="QR-code">
+		<img src="pictures/qr.gif" class="place" height="400" alt="Quiz QR-code">
 	</section>
 
 
